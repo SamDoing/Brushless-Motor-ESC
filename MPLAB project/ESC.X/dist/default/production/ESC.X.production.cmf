@@ -1,0 +1,785 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\Sam\AppData\Local\Temp\skbox8.o
+idloc IDLOC 5 200000 200000 8 1
+init CODE 0 E E 4 1
+reset_vec CODE 0 0 0 4 1
+config CONFIG 4 300000 300000 E 1
+$dist/default/production\ESC.X.production.o
+cinit CODE 0 10F8 10F8 7E 1
+idloc IDLOC 5 200000 200000 8 1
+intcode_body CODE 0 83E 83E 13E 1
+text0 CODE 0 AB0 AB0 132 1
+text1 CODE 0 1220 1220 E 1
+text2 CODE 0 BE2 BE2 F0 1
+text3 CODE 0 CD2 CD2 D6 1
+text4 CODE 0 E5E E5E B0 1
+text5 CODE 0 11DA 11DA 2C 1
+text6 CODE 0 1176 1176 64 1
+text7 CODE 0 FB4 FB4 A4 1
+text9 CODE 0 1206 1206 1A 1
+text10 CODE 0 F0E F0E A6 1
+text11 CODE 0 DA8 DA8 B6 1
+text12 CODE 0 97C 97C 134 1
+idataCOMRAM CODE 0 122E 122E 5 1
+cstackCOMRAM COMRAM 1 3B 3B 19 1
+cstackBANK0 BANK0 1 60 60 45 1
+temp COMRAM 1 59 59 1 1
+bssBANK0 BANK0 1 A5 A5 20 1
+intcode CODE 0 8 8 6 1
+smallconst SMALLCONST 0 800 800 3E 1
+idataBANK0 CODE 0 1233 1233 2 1
+idataBANK1 CODE 0 1058 1058 A0 1
+dataBANK0 BANK0 1 C5 C5 2 1
+dataBANK1 BANK1 1 100 100 A0 1
+dataCOMRAM COMRAM 1 54 54 5 1
+bssCOMRAM COMRAM 1 1 1 3A 1
+config CONFIG 4 300000 300000 E 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM C7-FF 1
+RAM 1A0-7FF 1
+SFR F60-FFF 1
+BANK0 C7-FF 1
+BANK1 1A0-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+CONST 4-7 1
+CONST 12-7FF 1
+CONST 1235-7FFF 1
+STACK 1A0-7FF 1
+SMALLCONST 1235-7FFF 1
+CODE 4-7 1
+CODE 12-7FF 1
+CODE 1235-7FFF 1
+BIGRAM 5A-5F 1
+BIGRAM C7-FF 1
+BIGRAM 1A0-7FF 1
+COMRAM 5A-5F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 1235-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\ESC.X.production.o
+8 intcode CODE >2946:C:\Users\Sam\AppData\Local\Temp\skbox.s
+8 intcode CODE >129:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+97C text12 CODE >60:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+97C text12 CODE >62:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+97E text12 CODE >63:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+988 text12 CODE >64:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+990 text12 CODE >65:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+992 text12 CODE >69:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+99A text12 CODE >70:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+9A8 text12 CODE >73:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+9BA text12 CODE >74:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+9C6 text12 CODE >75:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+9DA text12 CODE >76:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+9E6 text12 CODE >77:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+9FA text12 CODE >78:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+A06 text12 CODE >79:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+A1A text12 CODE >80:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+A26 text12 CODE >81:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+A76 text12 CODE >82:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+A82 text12 CODE >83:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+A96 text12 CODE >84:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+AA2 text12 CODE >92:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+AAA text12 CODE >96:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+AAE text12 CODE >97:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+DA8 text11 CODE >100:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+DA8 text11 CODE >102:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+DB0 text11 CODE >103:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+DC8 text11 CODE >104:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+DE2 text11 CODE >105:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+DEA text11 CODE >106:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+DF2 text11 CODE >107:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+E30 text11 CODE >108:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+E5C text11 CODE >109:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+F0E text10 CODE >112:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+F0E text10 CODE >114:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+F16 text10 CODE >115:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+F24 text10 CODE >116:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+F3E text10 CODE >117:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+F46 text10 CODE >118:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+F4E text10 CODE >119:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+F86 text10 CODE >121:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+FB2 text10 CODE >122:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+1206 text9 CODE >124:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+1206 text9 CODE >126:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+121E text9 CODE >127:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+83E intcode_body CODE >129:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+848 intcode_body CODE >131:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+856 intcode_body CODE >135:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+858 intcode_body CODE >136:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+858 intcode_body CODE >137:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+866 intcode_body CODE >139:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+868 intcode_body CODE >140:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+86C intcode_body CODE >143:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+888 intcode_body CODE >144:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+88C intcode_body CODE >145:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+890 intcode_body CODE >147:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+894 intcode_body CODE >148:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+898 intcode_body CODE >149:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+89C intcode_body CODE >150:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+8CA intcode_body CODE >151:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+8CA intcode_body CODE >158:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+8D8 intcode_body CODE >160:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+8FC intcode_body CODE >161:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+8FE intcode_body CODE >162:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+902 intcode_body CODE >163:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+906 intcode_body CODE >164:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+914 intcode_body CODE >166:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+936 intcode_body CODE >167:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+93C intcode_body CODE >170:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+94A intcode_body CODE >172:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+96A intcode_body CODE >173:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+970 intcode_body CODE >176:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+FB4 text7 CODE >7:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\__lldiv.c
+FB4 text7 CODE >13:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\__lldiv.c
+FC4 text7 CODE >14:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\__lldiv.c
+FDA text7 CODE >15:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\__lldiv.c
+FDE text7 CODE >16:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\__lldiv.c
+FE2 text7 CODE >17:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\__lldiv.c
+FEC text7 CODE >18:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\__lldiv.c
+FEE text7 CODE >16:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\__lldiv.c
+FFC text7 CODE >21:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\__lldiv.c
+1006 text7 CODE >22:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\__lldiv.c
+1024 text7 CODE >23:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\__lldiv.c
+1034 text7 CODE >24:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\__lldiv.c
+1036 text7 CODE >26:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\__lldiv.c
+1040 text7 CODE >27:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\__lldiv.c
+1046 text7 CODE >28:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\__lldiv.c
+1046 text7 CODE >29:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\__lldiv.c
+1056 text7 CODE >30:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\__lldiv.c
+1176 text6 CODE >20:C:\Users\Sam\MPLABXProjects\ESC.X/USART.h
+1176 text6 CODE >22:C:\Users\Sam\MPLABXProjects\ESC.X/USART.h
+1184 text6 CODE >23:C:\Users\Sam\MPLABXProjects\ESC.X/USART.h
+11B0 text6 CODE >25:C:\Users\Sam\MPLABXProjects\ESC.X/USART.h
+11D8 text6 CODE >26:C:\Users\Sam\MPLABXProjects\ESC.X/USART.h
+11DA text5 CODE >28:C:\Users\Sam\MPLABXProjects\ESC.X/USART.h
+11DA text5 CODE >30:C:\Users\Sam\MPLABXProjects\ESC.X/USART.h
+11DC text5 CODE >31:C:\Users\Sam\MPLABXProjects\ESC.X/USART.h
+11DE text5 CODE >32:C:\Users\Sam\MPLABXProjects\ESC.X/USART.h
+11EA text5 CODE >33:C:\Users\Sam\MPLABXProjects\ESC.X/USART.h
+11FE text5 CODE >34:C:\Users\Sam\MPLABXProjects\ESC.X/USART.h
+1200 text5 CODE >35:C:\Users\Sam\MPLABXProjects\ESC.X/USART.h
+1202 text5 CODE >36:C:\Users\Sam\MPLABXProjects\ESC.X/USART.h
+1204 text5 CODE >37:C:\Users\Sam\MPLABXProjects\ESC.X/USART.h
+E5E text4 CODE >7:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awmod.c
+E5E text4 CODE >12:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awmod.c
+E62 text4 CODE >13:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awmod.c
+E70 text4 CODE >14:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awmod.c
+E78 text4 CODE >15:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awmod.c
+E7C text4 CODE >17:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awmod.c
+E8A text4 CODE >18:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awmod.c
+E92 text4 CODE >19:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awmod.c
+EA4 text4 CODE >20:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awmod.c
+EA8 text4 CODE >21:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awmod.c
+EAC text4 CODE >22:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awmod.c
+EB2 text4 CODE >23:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awmod.c
+EB4 text4 CODE >21:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awmod.c
+EC2 text4 CODE >26:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awmod.c
+ED8 text4 CODE >27:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awmod.c
+EE0 text4 CODE >28:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awmod.c
+EE6 text4 CODE >29:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awmod.c
+EEC text4 CODE >31:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awmod.c
+EFC text4 CODE >32:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awmod.c
+F04 text4 CODE >33:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awmod.c
+F0C text4 CODE >34:C:\Program Files\Microchip\xc8\v2.30\pic\sources\c99\common\awmod.c
+CD2 text3 CODE >267:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+CD4 text3 CODE >269:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+CE6 text3 CODE >271:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+CF4 text3 CODE >273:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+CF6 text3 CODE >274:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+CFC text3 CODE >276:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+CFE text3 CODE >277:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+D02 text3 CODE >278:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+D02 text3 CODE >280:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+D10 text3 CODE >282:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+D12 text3 CODE >283:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+D18 text3 CODE >285:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+D1A text3 CODE >287:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+D2C text3 CODE >289:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+D3A text3 CODE >291:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+D3C text3 CODE >292:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+D42 text3 CODE >294:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+D44 text3 CODE >295:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+D48 text3 CODE >296:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+D48 text3 CODE >298:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+D56 text3 CODE >300:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+D58 text3 CODE >301:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+D5E text3 CODE >303:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+D60 text3 CODE >305:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+D72 text3 CODE >307:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+D80 text3 CODE >309:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+D82 text3 CODE >310:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+D88 text3 CODE >312:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+D8A text3 CODE >313:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+D8E text3 CODE >314:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+D8E text3 CODE >316:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+D9C text3 CODE >318:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+D9E text3 CODE >319:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+DA4 text3 CODE >321:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+DA6 text3 CODE >323:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+BE2 text2 CODE >552:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+BE2 text2 CODE >563:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+BE6 text2 CODE >567:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+C60 text2 CODE >569:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+C64 text2 CODE >571:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+C80 text2 CODE >587:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+C88 text2 CODE >588:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+C8A text2 CODE >589:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+C8C text2 CODE >590:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+C8E text2 CODE >591:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+CD0 text2 CODE >595:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+1220 text1 CODE >178:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+1220 text1 CODE >180:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+1222 text1 CODE >181:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+1224 text1 CODE >182:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+1226 text1 CODE >183:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+1228 text1 CODE >184:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+122A text1 CODE >185:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+122C text1 CODE >186:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+AB0 text0 CODE >635:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+AB0 text0 CODE >638:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+AC0 text0 CODE >640:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+AC4 text0 CODE >641:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+AC8 text0 CODE >643:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+ACA text0 CODE >644:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+ACE text0 CODE >647:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+AD0 text0 CODE >650:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+AD4 text0 CODE >651:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+AD8 text0 CODE >652:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+ADC text0 CODE >655:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+AE0 text0 CODE >656:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+AE4 text0 CODE >657:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+AE6 text0 CODE >658:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+AEA text0 CODE >659:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+AEE text0 CODE >661:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+AF0 text0 CODE >662:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+AF2 text0 CODE >665:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+AF4 text0 CODE >668:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+AF8 text0 CODE >670:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+B02 text0 CODE >671:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+B04 text0 CODE >672:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+B06 text0 CODE >673:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+B0A text0 CODE >674:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+B0C text0 CODE >675:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+B14 text0 CODE >676:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+B18 text0 CODE >677:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+B1C text0 CODE >680:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+B34 text0 CODE >682:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+B38 text0 CODE >686:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+B7C text0 CODE >687:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+B84 text0 CODE >688:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+B8C text0 CODE >689:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+B8E text0 CODE >691:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+B8E text0 CODE >692:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+BA0 text0 CODE >693:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+BA4 text0 CODE >697:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+BD6 text0 CODE >714:C:\Users\Sam\MPLABXProjects\ESC.X\newmain.c
+10F8 cinit CODE >850:C:\Users\Sam\AppData\Local\Temp\skbox.s
+10F8 cinit CODE >852:C:\Users\Sam\AppData\Local\Temp\skbox.s
+10F8 cinit CODE >855:C:\Users\Sam\AppData\Local\Temp\skbox.s
+10F8 cinit CODE >1003:C:\Users\Sam\AppData\Local\Temp\skbox.s
+10FA cinit CODE >1004:C:\Users\Sam\AppData\Local\Temp\skbox.s
+10FC cinit CODE >1005:C:\Users\Sam\AppData\Local\Temp\skbox.s
+10FE cinit CODE >1006:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1100 cinit CODE >1007:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1102 cinit CODE >1008:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1104 cinit CODE >1009:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1108 cinit CODE >1010:C:\Users\Sam\AppData\Local\Temp\skbox.s
+110C cinit CODE >1011:C:\Users\Sam\AppData\Local\Temp\skbox.s
+110C cinit CODE >1012:C:\Users\Sam\AppData\Local\Temp\skbox.s
+110E cinit CODE >1013:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1112 cinit CODE >1014:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1114 cinit CODE >1015:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1116 cinit CODE >1016:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1118 cinit CODE >1020:C:\Users\Sam\AppData\Local\Temp\skbox.s
+111A cinit CODE >1021:C:\Users\Sam\AppData\Local\Temp\skbox.s
+111C cinit CODE >1022:C:\Users\Sam\AppData\Local\Temp\skbox.s
+111E cinit CODE >1023:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1120 cinit CODE >1024:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1122 cinit CODE >1025:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1124 cinit CODE >1026:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1126 cinit CODE >1027:C:\Users\Sam\AppData\Local\Temp\skbox.s
+112A cinit CODE >1028:C:\Users\Sam\AppData\Local\Temp\skbox.s
+112C cinit CODE >1029:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1130 cinit CODE >1033:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1132 cinit CODE >1034:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1134 cinit CODE >1035:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1136 cinit CODE >1036:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1138 cinit CODE >1037:C:\Users\Sam\AppData\Local\Temp\skbox.s
+113A cinit CODE >1038:C:\Users\Sam\AppData\Local\Temp\skbox.s
+113C cinit CODE >1039:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1140 cinit CODE >1040:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1144 cinit CODE >1041:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1144 cinit CODE >1042:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1146 cinit CODE >1043:C:\Users\Sam\AppData\Local\Temp\skbox.s
+114A cinit CODE >1044:C:\Users\Sam\AppData\Local\Temp\skbox.s
+114C cinit CODE >1045:C:\Users\Sam\AppData\Local\Temp\skbox.s
+114E cinit CODE >1046:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1150 cinit CODE >1050:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1154 cinit CODE >1051:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1156 cinit CODE >1052:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1156 cinit CODE >1053:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1158 cinit CODE >1054:C:\Users\Sam\AppData\Local\Temp\skbox.s
+115A cinit CODE >1055:C:\Users\Sam\AppData\Local\Temp\skbox.s
+115C cinit CODE >1058:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1160 cinit CODE >1059:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1162 cinit CODE >1060:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1162 cinit CODE >1061:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1164 cinit CODE >1062:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1166 cinit CODE >1063:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1168 cinit CODE >1069:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1168 cinit CODE >1071:C:\Users\Sam\AppData\Local\Temp\skbox.s
+116A cinit CODE >1072:C:\Users\Sam\AppData\Local\Temp\skbox.s
+116C cinit CODE >1074:C:\Users\Sam\AppData\Local\Temp\skbox.s
+116E cinit CODE >1075:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1170 cinit CODE >1076:C:\Users\Sam\AppData\Local\Temp\skbox.s
+1172 cinit CODE >1077:C:\Users\Sam\AppData\Local\Temp\skbox.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__LdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production\ESC.X.production.o
+__LdataBANK1 0 0 ABS 0 dataBANK1 dist/default/production\ESC.X.production.o
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\ESC.X.production.o
+__Hspace_0 1235 0 ABS 0 - dist/default/production\ESC.X.production.o
+__Hspace_1 1A0 0 ABS 0 - dist/default/production\ESC.X.production.o
+__Hspace_2 0 0 ABS 0 - dist/default/production\ESC.X.production.o
+__Hspace_4 60000E 0 ABS 0 - dist/default/production\ESC.X.production.o
+__HidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production\ESC.X.production.o
+__HidataBANK1 0 0 ABS 0 idataBANK1 dist/default/production\ESC.X.production.o
+_time_ms D 0 COMRAM 1 bssCOMRAM dist/default/production\ESC.X.production.o
+_time_us 11 0 COMRAM 1 bssCOMRAM dist/default/production\ESC.X.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\ESC.X.production.o
+_lastError 20 0 COMRAM 1 bssCOMRAM dist/default/production\ESC.X.production.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Sam\AppData\Local\Temp\skbox8.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\ESC.X.production.o
+trapzoidal_control@trap_duty 1A 0 COMRAM 1 bssCOMRAM dist/default/production\ESC.X.production.o
+_rotor_ant_t 5 0 COMRAM 1 bssCOMRAM dist/default/production\ESC.X.production.o
+__Lsmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\ESC.X.production.o
+_CREN 7D5C 0 ABS 0 - dist/default/production\ESC.X.production.o
+_LATA F89 0 ABS 0 - dist/default/production\ESC.X.production.o
+_LATE F8D 0 ABS 0 - dist/default/production\ESC.X.production.o
+_OERR 7D59 0 ABS 0 - dist/default/production\ESC.X.production.o
+_RBPU 7F8F 0 ABS 0 - dist/default/production\ESC.X.production.o
+_RCIF 7CF5 0 ABS 0 - dist/default/production\ESC.X.production.o
+_TMR0 FD6 0 ABS 0 - dist/default/production\ESC.X.production.o
+_TXEN 7D65 0 ABS 0 - dist/default/production\ESC.X.production.o
+_TXIF 7CF4 0 ABS 0 - dist/default/production\ESC.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\Sam\AppData\Local\Temp\skbox8.o
+__int 8 0 CODE 0 intcode dist/default/production\ESC.X.production.o
+_hall 3A 0 COMRAM 1 bssCOMRAM dist/default/production\ESC.X.production.o
+_main AB0 0 CODE 0 text0 dist/default/production\ESC.X.production.o
+btemp 59 0 COMRAM 1 temp dist/default/production\ESC.X.production.o
+start E 0 CODE 0 init C:\Users\Sam\AppData\Local\Temp\skbox8.o
+__size_of___awmod 0 0 ABS 0 - dist/default/production\ESC.X.production.o
+__size_of__int 0 0 ABS 0 - dist/default/production\ESC.X.production.o
+__size_of_main 0 0 ABS 0 - dist/default/production\ESC.X.production.o
+__size_of___lldiv 0 0 ABS 0 - dist/default/production\ESC.X.production.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\ESC.X.production.o
+__size_of_buck_start 0 0 ABS 0 - dist/default/production\ESC.X.production.o
+__size_of_USART_UART_init 0 0 ABS 0 - dist/default/production\ESC.X.production.o
+USART_UART_init@fastMode 64 0 BANK0 1 cstackBANK0 dist/default/production\ESC.X.production.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 dist/default/production\ESC.X.production.o
+__LidataBANK1 0 0 ABS 0 idataBANK1 dist/default/production\ESC.X.production.o
+__Hpowerup E 0 CODE 0 powerup dist/default/production\ESC.X.production.o
+speed_measure@last_hall 33 0 COMRAM 1 bssCOMRAM dist/default/production\ESC.X.production.o
+speed_measure@last_time 1 0 COMRAM 1 bssCOMRAM dist/default/production\ESC.X.production.o
+___awmod@sign 46 0 COMRAM 1 cstackCOMRAM dist/default/production\ESC.X.production.o
+_T0CONbits FD5 0 ABS 0 - dist/default/production\ESC.X.production.o
+_d_error 1E 0 COMRAM 1 bssCOMRAM dist/default/production\ESC.X.production.o
+ttemp5 5A 0 COMRAM 1 temp dist/default/production\ESC.X.production.o
+ttemp6 5D 0 COMRAM 1 temp dist/default/production\ESC.X.production.o
+ttemp7 61 0 COMRAM 1 temp dist/default/production\ESC.X.production.o
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\ESC.X.production.o
+__size_of_USART_setBaudRate 0 0 ABS 0 - dist/default/production\ESC.X.production.o
+__accesstop 60 0 ABS 0 - C:\Users\Sam\AppData\Local\Temp\skbox8.o
+intlevel0 0 0 CODE 0 text C:\Users\Sam\AppData\Local\Temp\skbox8.o
+intlevel1 0 0 CODE 0 text C:\Users\Sam\AppData\Local\Temp\skbox8.o
+intlevel2 0 0 CODE 0 text C:\Users\Sam\AppData\Local\Temp\skbox8.o
+intlevel3 0 0 CODE 0 text C:\Users\Sam\AppData\Local\Temp\skbox8.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\ESC.X.production.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\ESC.X.production.o
+wtemp8 5A 0 COMRAM 1 temp dist/default/production\ESC.X.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\ESC.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\ESC.X.production.o
+__pidataCOMRAM 122E 0 CODE 0 idataCOMRAM dist/default/production\ESC.X.production.o
+_ADCON0 FC2 0 ABS 0 - dist/default/production\ESC.X.production.o
+_ADCON1 FC1 0 ABS 0 - dist/default/production\ESC.X.production.o
+_ADCON2 FC0 0 ABS 0 - dist/default/production\ESC.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\Sam\AppData\Local\Temp\skbox8.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\Sam\AppData\Local\Temp\skbox8.o
+_open_loop_sinusoidal_control BE2 0 CODE 0 text2 dist/default/production\ESC.X.production.o
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/default/production\ESC.X.production.o
+open_loop_sinusoidal_control@stator_angle 34 0 COMRAM 1 bssCOMRAM dist/default/production\ESC.X.production.o
+_CCPR2L FBB 0 ABS 0 - dist/default/production\ESC.X.production.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\ESC.X.production.o
+_hall_ant_t 9 0 COMRAM 1 bssCOMRAM dist/default/production\ESC.X.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\ESC.X.production.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\ESC.X.production.o
+__Hintcodelo E 0 CODE 0 intcodelo dist/default/production\ESC.X.production.o
+speed_measure@counter 32 0 COMRAM 1 bssCOMRAM dist/default/production\ESC.X.production.o
+__buck_duty C3 0 BANK0 1 bssBANK0 dist/default/production\ESC.X.production.o
+__rt_pos_int@temp_hall_p 1C 0 COMRAM 1 bssCOMRAM dist/default/production\ESC.X.production.o
+__end_of___awmod F0E 0 CODE 0 text4 dist/default/production\ESC.X.production.o
+__end_of___lldiv 1058 0 CODE 0 text7 dist/default/production\ESC.X.production.o
+_INTCON FF2 0 ABS 0 - dist/default/production\ESC.X.production.o
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\ESC.X.production.o
+_INTCON2bits FF1 0 ABS 0 - dist/default/production\ESC.X.production.o
+_INTCON3bits FF0 0 ABS 0 - dist/default/production\ESC.X.production.o
+___lldiv@counter 4D 0 COMRAM 1 cstackCOMRAM dist/default/production\ESC.X.production.o
+__Lintcodelo E 0 CODE 0 intcodelo dist/default/production\ESC.X.production.o
+start_initialization 10F8 0 CODE 0 cinit dist/default/production\ESC.X.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\ESC.X.production.o
+_TRISBbits F93 0 ABS 0 - dist/default/production\ESC.X.production.o
+_TRISCbits F94 0 ABS 0 - dist/default/production\ESC.X.production.o
+_hall_a_p 2E 0 COMRAM 1 bssCOMRAM dist/default/production\ESC.X.production.o
+_pwmSin48 100 0 BANK1 1 dataBANK1 dist/default/production\ESC.X.production.o
+___lldiv@dividend 41 0 COMRAM 1 cstackCOMRAM dist/default/production\ESC.X.production.o
+_hall_dt 54 0 COMRAM 1 dataCOMRAM dist/default/production\ESC.X.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production\ESC.X.production.o
+__size_of_turn_off 0 0 ABS 0 - dist/default/production\ESC.X.production.o
+__end_of_USART_setBaudRate 11DA 0 CODE 0 text6 dist/default/production\ESC.X.production.o
+__pcstackBANK0 60 0 BANK0 1 cstackBANK0 dist/default/production\ESC.X.production.o
+__end_of__rt_pos_int AB0 0 CODE 0 text12 dist/default/production\ESC.X.production.o
+__end_of_pwmABC DA8 0 CODE 0 text3 dist/default/production\ESC.X.production.o
+_elapsed_time 2C 0 COMRAM 1 bssCOMRAM dist/default/production\ESC.X.production.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\ESC.X.production.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\ESC.X.production.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\ESC.X.production.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\ESC.X.production.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\ESC.X.production.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\ESC.X.production.o
+__Hbank6 0 0 ABS 0 bank6 dist/default/production\ESC.X.production.o
+__Hbank7 0 0 ABS 0 bank7 dist/default/production\ESC.X.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production\ESC.X.production.o
+__Hconst 0 0 CONST 0 const dist/default/production\ESC.X.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production\ESC.X.production.o
+__Hidloc 200008 0 IDLOC 5 idloc dist/default/production\ESC.X.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\ESC.X.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\ESC.X.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\ESC.X.production.o
+__Hstack 0 0 STACK 2 stack dist/default/production\ESC.X.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production\ESC.X.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production\ESC.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production\ESC.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production\ESC.X.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production\ESC.X.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production\ESC.X.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production\ESC.X.production.o
+__Htext7 0 0 ABS 0 text7 dist/default/production\ESC.X.production.o
+__Htext9 0 0 ABS 0 text9 dist/default/production\ESC.X.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\ESC.X.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production\ESC.X.production.o
+__smallconst 800 0 SMALLCONST 0 smallconst C:\Users\Sam\AppData\Local\Temp\skbox8.o
+__Hcomram 0 0 ABS 0 comram dist/default/production\ESC.X.production.o
+__Hconfig 30000E 0 CONFIG 4 config dist/default/production\ESC.X.production.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\ESC.X.production.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\ESC.X.production.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\ESC.X.production.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\ESC.X.production.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\ESC.X.production.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\ESC.X.production.o
+__Lbank6 0 0 ABS 0 bank6 dist/default/production\ESC.X.production.o
+__Lbank7 0 0 ABS 0 bank7 dist/default/production\ESC.X.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production\ESC.X.production.o
+__Lconst 0 0 CONST 0 const dist/default/production\ESC.X.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production\ESC.X.production.o
+__Lidloc 0 0 IDLOC 5 idloc dist/default/production\ESC.X.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\ESC.X.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\ESC.X.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\ESC.X.production.o
+__Lstack 0 0 STACK 2 stack dist/default/production\ESC.X.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production\ESC.X.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production\ESC.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production\ESC.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production\ESC.X.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production\ESC.X.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production\ESC.X.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production\ESC.X.production.o
+__Ltext7 0 0 ABS 0 text7 dist/default/production\ESC.X.production.o
+__Ltext9 0 0 ABS 0 text9 dist/default/production\ESC.X.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\ESC.X.production.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\ESC.X.production.o
+_PORTAbits F80 0 ABS 0 - dist/default/production\ESC.X.production.o
+_PORTEbits F84 0 ABS 0 - dist/default/production\ESC.X.production.o
+__end_of_buck_continuos_controller FB4 0 CODE 0 text10 dist/default/production\ESC.X.production.o
+_INTCONbits FF2 0 ABS 0 - dist/default/production\ESC.X.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production\ESC.X.production.o
+__Hdata 0 0 ABS 0 data dist/default/production\ESC.X.production.o
+__Hinit 12 0 CODE 0 init dist/default/production\ESC.X.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\ESC.X.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\ESC.X.production.o
+__Htemp 5A 0 COMRAM 1 temp dist/default/production\ESC.X.production.o
+__Htext 0 0 ABS 0 text dist/default/production\ESC.X.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production\ESC.X.production.o
+__Ldata 0 0 ABS 0 data dist/default/production\ESC.X.production.o
+__Linit E 0 CODE 0 init dist/default/production\ESC.X.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\ESC.X.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\ESC.X.production.o
+__Ltemp 59 0 COMRAM 1 temp dist/default/production\ESC.X.production.o
+__Ltext 0 0 ABS 0 text dist/default/production\ESC.X.production.o
+__end_of_senThirthHarmonic 83D 0 SMALLCONST 0 smallconst dist/default/production\ESC.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\ESC.X.production.o
+int$flags 59 0 COMRAM 1 temp dist/default/production\ESC.X.production.o
+_turn_off 1220 0 CODE 0 text1 dist/default/production\ESC.X.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\ESC.X.production.o
+__Hintret 0 0 ABS 0 intret dist/default/production\ESC.X.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production\ESC.X.production.o
+_PR2 FCB 0 ABS 0 - dist/default/production\ESC.X.production.o
+__S0 1235 0 ABS 0 - dist/default/production\ESC.X.production.o
+__S1 1A0 0 ABS 0 - dist/default/production\ESC.X.production.o
+__S2 0 0 ABS 0 - dist/default/production\ESC.X.production.o
+__S4 0 0 ABS 0 - dist/default/production\ESC.X.production.o
+__S5 0 0 ABS 0 - dist/default/production\ESC.X.production.o
+_angular_speed 15 0 COMRAM 1 bssCOMRAM dist/default/production\ESC.X.production.o
+__size_of_open_loop_sinusoidal_control 0 0 ABS 0 - dist/default/production\ESC.X.production.o
+__end_of_turn_off 122E 0 CODE 0 text1 dist/default/production\ESC.X.production.o
+_rotor_real_pos 24 0 COMRAM 1 bssCOMRAM dist/default/production\ESC.X.production.o
+__end_of_open_loop_sinusoidal_control CD2 0 CODE 0 text2 dist/default/production\ESC.X.production.o
+_driver_duty 39 0 COMRAM 1 bssCOMRAM dist/default/production\ESC.X.production.o
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/default/production\ESC.X.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\ESC.X.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\ESC.X.production.o
+_USART_setBaudRate 1176 0 CODE 0 text6 dist/default/production\ESC.X.production.o
+int_func 83E 0 CODE 0 intcode_body dist/default/production\ESC.X.production.o
+__Lintentry 0 0 ABS 0 intentry dist/default/production\ESC.X.production.o
+___lldiv@divisor 45 0 COMRAM 1 cstackCOMRAM dist/default/production\ESC.X.production.o
+_hall_p 30 0 COMRAM 1 bssCOMRAM dist/default/production\ESC.X.production.o
+__Hramtop 800 0 RAM 0 ramtop dist/default/production\ESC.X.production.o
+USART_UART_init@rate 60 0 BANK0 1 cstackBANK0 dist/default/production\ESC.X.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\ESC.X.production.o
+__pdataBANK0 C5 0 BANK0 1 dataBANK0 dist/default/production\ESC.X.production.o
+__pdataBANK1 100 0 BANK1 1 dataBANK1 dist/default/production\ESC.X.production.o
+__activetblptr 2 0 ABS 0 - dist/default/production\ESC.X.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\ESC.X.production.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\ESC.X.production.o
+__Htext10 0 0 ABS 0 text10 dist/default/production\ESC.X.production.o
+__Htext11 0 0 ABS 0 text11 dist/default/production\ESC.X.production.o
+__Htext12 0 0 ABS 0 text12 dist/default/production\ESC.X.production.o
+__Htext13 0 0 ABS 0 text13 dist/default/production\ESC.X.production.o
+___awmod@counter 45 0 COMRAM 1 cstackCOMRAM dist/default/production\ESC.X.production.o
+_RCSTAbits FAB 0 ABS 0 - dist/default/production\ESC.X.production.o
+_PIE1bits F9D 0 ABS 0 - dist/default/production\ESC.X.production.o
+__ptext10 F0E 0 CODE 0 text10 dist/default/production\ESC.X.production.o
+__ptext11 DA8 0 CODE 0 text11 dist/default/production\ESC.X.production.o
+__ptext12 97C 0 CODE 0 text12 dist/default/production\ESC.X.production.o
+__ptext13 0 0 CODE 0 text13 dist/default/production\ESC.X.production.o
+___awmod E5E 0 CODE 0 text4 dist/default/production\ESC.X.production.o
+__pintcode_body 83E 0 CODE 0 intcode_body dist/default/production\ESC.X.production.o
+___lldiv FB4 0 CODE 0 text7 dist/default/production\ESC.X.production.o
+__size_of_buck_continuos_controller 0 0 ABS 0 - dist/default/production\ESC.X.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\ESC.X.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production\ESC.X.production.o
+_buck_function BF 0 BANK0 1 bssBANK0 dist/default/production\ESC.X.production.o
+_buck_start DA8 0 CODE 0 text11 dist/default/production\ESC.X.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production\ESC.X.production.o
+__Lconfig 0 0 CONFIG 4 config dist/default/production\ESC.X.production.o
+_pwmABC CD2 0 CODE 0 text3 dist/default/production\ESC.X.production.o
+pwmABC@A 43 0 COMRAM 1 cstackCOMRAM dist/default/production\ESC.X.production.o
+pwmABC@B 41 0 COMRAM 1 cstackCOMRAM dist/default/production\ESC.X.production.o
+pwmABC@C 42 0 COMRAM 1 cstackCOMRAM dist/default/production\ESC.X.production.o
+_LATBbits F8A 0 ABS 0 - dist/default/production\ESC.X.production.o
+_LATCbits F8B 0 ABS 0 - dist/default/production\ESC.X.production.o
+__size_of__rt_pos_int 0 0 ABS 0 - dist/default/production\ESC.X.production.o
+main@F3603 160 0 BANK1 1 dataBANK1 dist/default/production\ESC.X.production.o
+_senThirthHarmonic 801 0 SMALLCONST 0 smallconst dist/default/production\ESC.X.production.o
+main@text 65 0 BANK0 1 cstackBANK0 dist/default/production\ESC.X.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\ESC.X.production.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\ESC.X.production.o
+stackhi 7FF 0 ABS 0 - C:\Users\Sam\AppData\Local\Temp\skbox8.o
+stacklo 1A0 0 ABS 0 - C:\Users\Sam\AppData\Local\Temp\skbox8.o
+__Lintcode 8 0 CODE 0 intcode dist/default/production\ESC.X.production.o
+__Lintret 0 0 ABS 0 intret dist/default/production\ESC.X.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production\ESC.X.production.o
+_ADCON0bits FC2 0 ABS 0 - dist/default/production\ESC.X.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production\ESC.X.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production\ESC.X.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production\ESC.X.production.o
+__Lspace_4 0 0 ABS 0 - dist/default/production\ESC.X.production.o
+USART_setBaudRate@rate 4E 0 COMRAM 1 cstackCOMRAM dist/default/production\ESC.X.production.o
+__pbssCOMRAM 1 0 COMRAM 1 bssCOMRAM dist/default/production\ESC.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\ESC.X.production.o
+_PIR1bits F9E 0 ABS 0 - dist/default/production\ESC.X.production.o
+_speed_controller 1206 0 CODE 0 text9 dist/default/production\ESC.X.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\ESC.X.production.o
+end_of_initialization 1168 0 CODE 0 cinit dist/default/production\ESC.X.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\ESC.X.production.o
+__Hintentry 0 0 ABS 0 intentry dist/default/production\ESC.X.production.o
+_RCONbits FD0 0 ABS 0 - dist/default/production\ESC.X.production.o
+__size_of_pwmABC 0 0 ABS 0 - dist/default/production\ESC.X.production.o
+?___awmod 41 0 COMRAM 1 cstackCOMRAM dist/default/production\ESC.X.production.o
+?___lldiv 41 0 COMRAM 1 cstackCOMRAM dist/default/production\ESC.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\ESC.X.production.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/default/production\ESC.X.production.o
+___awmod@dividend 41 0 COMRAM 1 cstackCOMRAM dist/default/production\ESC.X.production.o
+__end_of_buck_start E5E 0 CODE 0 text11 dist/default/production\ESC.X.production.o
+__Lramtop 800 0 RAM 0 ramtop dist/default/production\ESC.X.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\ESC.X.production.o
+__pcinit 10F8 0 CODE 0 cinit dist/default/production\ESC.X.production.o
+__ptext0 AB0 0 CODE 0 text0 dist/default/production\ESC.X.production.o
+__ptext1 1220 0 CODE 0 text1 dist/default/production\ESC.X.production.o
+__ptext2 BE2 0 CODE 0 text2 dist/default/production\ESC.X.production.o
+__ptext3 CD2 0 CODE 0 text3 dist/default/production\ESC.X.production.o
+__ptext4 E5E 0 CODE 0 text4 dist/default/production\ESC.X.production.o
+__ptext5 11DA 0 CODE 0 text5 dist/default/production\ESC.X.production.o
+__ptext6 1176 0 CODE 0 text6 dist/default/production\ESC.X.production.o
+__ptext7 FB4 0 CODE 0 text7 dist/default/production\ESC.X.production.o
+__ptext9 1206 0 CODE 0 text9 dist/default/production\ESC.X.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\ESC.X.production.o
+__end_of_USART_UART_init 1206 0 CODE 0 text5 dist/default/production\ESC.X.production.o
+__Ltext10 0 0 ABS 0 text10 dist/default/production\ESC.X.production.o
+__Ltext11 0 0 ABS 0 text11 dist/default/production\ESC.X.production.o
+__Ltext12 0 0 ABS 0 text12 dist/default/production\ESC.X.production.o
+__Ltext13 0 0 ABS 0 text13 dist/default/production\ESC.X.production.o
+__ramtop 800 0 RAM 0 ramtop C:\Users\Sam\AppData\Local\Temp\skbox8.o
+__Lpowerup E 0 CODE 0 powerup dist/default/production\ESC.X.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\ESC.X.production.o
+__psmallconst 800 0 SMALLCONST 0 smallconst dist/default/production\ESC.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\ESC.X.production.o
+___param_bank 0 0 ABS 0 - dist/default/production\ESC.X.production.o
+_buck_continuos_controller F0E 0 CODE 0 text10 dist/default/production\ESC.X.production.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\ESC.X.production.o
+_flag_dt 36 0 COMRAM 1 bssCOMRAM dist/default/production\ESC.X.production.o
+__end_of__initialization 1168 0 CODE 0 cinit dist/default/production\ESC.X.production.o
+___awmod@divisor 43 0 COMRAM 1 cstackCOMRAM dist/default/production\ESC.X.production.o
+_bk_voltage C1 0 BANK0 1 bssBANK0 dist/default/production\ESC.X.production.o
+_INTCON2 FF1 0 ABS 0 - dist/default/production\ESC.X.production.o
+_INTCON3 FF0 0 ABS 0 - dist/default/production\ESC.X.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\ESC.X.production.o
+__pidataBANK0 1233 0 CODE 0 idataBANK0 dist/default/production\ESC.X.production.o
+__pidataBANK1 1058 0 CODE 0 idataBANK1 dist/default/production\ESC.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\ESC.X.production.o
+_buck_setPoint C5 0 BANK0 1 dataBANK0 dist/default/production\ESC.X.production.o
+___lldiv@quotient 49 0 COMRAM 1 cstackCOMRAM dist/default/production\ESC.X.production.o
+__pcstackCOMRAM 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\ESC.X.production.o
+_TXSTAbits FAC 0 ABS 0 - dist/default/production\ESC.X.production.o
+__end_of_speed_controller 1220 0 CODE 0 text9 dist/default/production\ESC.X.production.o
+_USART_UART_init 11DA 0 CODE 0 text5 dist/default/production\ESC.X.production.o
+__end_of__int 97C 0 CODE 0 intcode_body dist/default/production\ESC.X.production.o
+__end_of_main BE2 0 CODE 0 text0 dist/default/production\ESC.X.production.o
+_CCP2CONbits FBA 0 ABS 0 - dist/default/production\ESC.X.production.o
+__pintcode 8 0 CODE 0 intcode dist/default/production\ESC.X.production.o
+_ADRES FC3 0 ABS 0 - dist/default/production\ESC.X.production.o
+_PORTB F81 0 ABS 0 - dist/default/production\ESC.X.production.o
+__size_of_speed_controller 0 0 ABS 0 - dist/default/production\ESC.X.production.o
+_RCREG FAE 0 ABS 0 - dist/default/production\ESC.X.production.o
+_SPBRG FAF 0 ABS 0 - dist/default/production\ESC.X.production.o
+_T0CON FD5 0 ABS 0 - dist/default/production\ESC.X.production.o
+_T1CON FCD 0 ABS 0 - dist/default/production\ESC.X.production.o
+_T2CON FCA 0 ABS 0 - dist/default/production\ESC.X.production.o
+_TMR1L FCE 0 ABS 0 - dist/default/production\ESC.X.production.o
+_TRISA F92 0 ABS 0 - dist/default/production\ESC.X.production.o
+_TRISB F93 0 ABS 0 - dist/default/production\ESC.X.production.o
+_TRISE F96 0 ABS 0 - dist/default/production\ESC.X.production.o
+_TXREG FAD 0 ABS 0 - dist/default/production\ESC.X.production.o
+_Ubuff A5 0 BANK0 1 bssBANK0 dist/default/production\ESC.X.production.o
+__HRAM 0 0 ABS 0 - dist/default/production\ESC.X.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production\ESC.X.production.o
+__Hram 0 0 ABS 0 ram dist/default/production\ESC.X.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production\ESC.X.production.o
+__LRAM 1 0 ABS 0 - dist/default/production\ESC.X.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production\ESC.X.production.o
+__Lram 0 0 ABS 0 ram dist/default/production\ESC.X.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production\ESC.X.production.o
+_error 22 0 COMRAM 1 bssCOMRAM dist/default/production\ESC.X.production.o
+_p_err 28 0 COMRAM 1 bssCOMRAM dist/default/production\ESC.X.production.o
+_speed 38 0 COMRAM 1 bssCOMRAM dist/default/production\ESC.X.production.o
+_stepA 35 0 COMRAM 1 bssCOMRAM dist/default/production\ESC.X.production.o
+_stepB 58 0 COMRAM 1 dataCOMRAM dist/default/production\ESC.X.production.o
+_stepC 57 0 COMRAM 1 dataCOMRAM dist/default/production\ESC.X.production.o
+_CCP2CON FBA 0 ABS 0 - dist/default/production\ESC.X.production.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 dist/default/production\ESC.X.production.o
+__HdataBANK1 0 0 ABS 0 dataBANK1 dist/default/production\ESC.X.production.o
+_rotor_dir 37 0 COMRAM 1 bssCOMRAM dist/default/production\ESC.X.production.o
+_rotor_pos 2A 0 COMRAM 1 bssCOMRAM dist/default/production\ESC.X.production.o
+__initialization 10F8 0 CODE 0 cinit dist/default/production\ESC.X.production.o
+__pbssBANK0 A5 0 BANK0 1 bssBANK0 dist/default/production\ESC.X.production.o
+__pdataCOMRAM 54 0 COMRAM 1 dataCOMRAM dist/default/production\ESC.X.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\ESC.X.production.o
+__Hsmallconst 83E 0 SMALLCONST 0 smallconst dist/default/production\ESC.X.production.o
+__rt_pos_int 97C 0 CODE 0 text12 dist/default/production\ESC.X.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\ESC.X.production.o
+_hall_rotor_pos 26 0 COMRAM 1 bssCOMRAM dist/default/production\ESC.X.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\ESC.X.production.o
+__Hintcode E 0 CODE 0 intcode dist/default/production\ESC.X.production.o
+open_loop_sinusoidal_control@counterZ 18 0 COMRAM 1 bssCOMRAM dist/default/production\ESC.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+intcode_body 0 83E 83E 9F7 1
+cstackBANK0 1 60 60 67 1
+reset_vec 0 0 0 4 1
+intcode 0 8 8 A 1
+smallconst 0 800 800 3E 1
+dataBANK1 1 100 100 A0 1
+bssCOMRAM 1 1 1 59 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
