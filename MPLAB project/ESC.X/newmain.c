@@ -322,7 +322,7 @@ void pwmABC(const uint8_t A, const uint8_t B, const uint8_t C)
     }
 }
 
-/*These are the controllers from */
+/*These are the controllers functions */
 //Here we use the hall sensors to comutate between the six sectors
 //of eletrical revolution
 void trapzoidal_control()
@@ -554,7 +554,7 @@ void open_loop_sinusoidal_control()
     //static uint8_t hall_T = 0;
     //hall_T = PORTB & 0x07;
     
-    //Just to be safe than sorry later i'll edit all that shit just for test a supose
+    //Just to be safe than sorry later I'll edit all that sh**. It just for test I supose
     //if(hall_T == 0 || hall_T == 7) return;
     
     
